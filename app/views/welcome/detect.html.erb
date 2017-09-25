@@ -1,0 +1,27 @@
+<div class="container detect_page">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div id="detect">
+        Опеределение ближайшего магазина
+      </div>
+      <div id="detect_res">
+        Найден ближайший магазин: <span></span> <br>
+        <button class="btn btn-primary">Выбрать магазин <span></span></button>
+      </div>
+
+      <hr>
+
+      <div id="choose">
+        <strong>или выберите магазин из списка</strong>
+        <ul>
+        <% @shops.each do |shop| %>
+            <li><a href="" data-shop-id="<%= shop.id %>"><%= shop.name %></a></li>
+        <% end %>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
